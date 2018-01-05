@@ -17,6 +17,7 @@ bot.on('message', message => {
         message.channel.sendMessage("__**Liste des commandes:**__ \n -$help \n -$pBTC");
     }
 
+bot.on('message', message => {
 // BTC
     if (message.content === prefix + "pBTC") {
         coinmarketcap.multi(coins => {
@@ -47,4 +48,4 @@ bot.on('message', message => {
             console.log("Commande BTC-USD effectuée");
         });
     }
-});
+}});
