@@ -78,4 +78,3 @@ bot.on('message', message => {
             console.log("Commande XBY-USD effectuée");
         });
     }
-
