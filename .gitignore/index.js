@@ -14,7 +14,7 @@ bot.login("Mzk4NjMwNTA3NDA0ODUzMjQ5.DTBVHw.KXxTTIDhGklA037cPcl5r7W-bwg");
 
 bot.on('message', message => {
     if (message.content === prefix + "help") {
-        message.channel.sendMessage("__**Liste des commandes:**__ \n -$help \n -$pBTC");
+        message.channel.sendMessage("```__**Liste des commandes:**__ \n -$help \n -$pBTC```");
     }
 
 // BTC
@@ -43,7 +43,7 @@ bot.on('message', message => {
                 pc3 = ":chart_with_downwards_trend:";
             }else {pc3 = pc3};
 
-            message.channel.sendMessage("```*" + jour + "-" + mois + "-" + an + " (" + heure + ":" + minute + ":" + seconde +")*\n" + "__**" + coins.get("BTC").name + "**__" + "\nRank: " + coins.get("BTC").rank + "\nPrice : " + coins.get("BTC").price_usd + " :dollar: (USD)\n" + "Percent Change 1h : " + coins.get("BTC").percent_change_1h + " %" + pc1 + "\nPercent Change 24h : " + coins.get("BTC").percent_change_24h + " %" + pc2 + "\nPercent Change 7d : " + coins.get("BTC").percent_change_7d + " %" + pc3 );// Prints price of BTC in USD
+            message.channel.sendMessage("```*" + jour + "-" + mois + "-" + an + " (" + heure + ":" + minute + ":" + seconde +")*\n" + "__**" + coins.get("BTC").name + "**__" + "\nRank: " + coins.get("BTC").rank + "\nPrice : " + coins.get("BTC").price_usd + " :dollar: (USD)\n" + "Percent Change 1h : " + coins.get("BTC").percent_change_1h + " %" + pc1 + "\nPercent Change 24h : " + coins.get("BTC").percent_change_24h + " %" + pc2 + "\nPercent Change 7d : " + coins.get("BTC").percent_change_7d + " %" + pc3 + "```");// Prints price of BTC in USD
             console.log("Commande BTC-USD effectuée");
         });
     }
@@ -74,7 +74,7 @@ bot.on('message', message => {
                 pc3 = ":chart_with_downwards_trend:";
             }else {pc3 = pc3};
 
-            message.channel.sendMessage("```*" + jour + "-" + mois + "-" + an + " (" + heure + ":" + minute + ":" + seconde +")*\n" + "__**" + coins.get("XBY").name + "**__" + "\nRank: " + coins.get("XBY").rank + "\nPrice : " + coins.get("XBY").price_usd + " :dollar: (USD)\n" + "Percent Change 1h : " + coins.get("XBY").percent_change_1h + " %" + pc1 + "\nPercent Change 24h : " + coins.get("XBY").percent_change_24h + " %" + pc2 + "\nPercent Change 7d : " + coins.get("XBY").percent_change_7d + " %" + pc3 );// Prints price of BTC in USD
+            message.channel.sendMessage("```*" + jour + "-" + mois + "-" + an + " (" + heure + ":" + minute + ":" + seconde +")*\n" + "__**" + coins.get("XBY").name + "**__" + "\nRank: " + coins.get("XBY").rank + "\nPrice : " + coins.get("XBY").price_usd + " :dollar: (USD)\n" + "Percent Change 1h : " + coins.get("XBY").percent_change_1h + " %" + pc1 + "\nPercent Change 24h : " + coins.get("XBY").percent_change_24h + " %" + pc2 + "\nPercent Change 7d : " + coins.get("XBY").percent_change_7d + " %" + pc3 + "```");// Prints price of BTC in USD
             console.log("Commande $pXBY effectuée");
         });
     }
