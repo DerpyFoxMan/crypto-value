@@ -6,15 +6,15 @@ var CoinMarketCap = require("node-coinmarketcap");
 var coinmarketcap = new CoinMarketCap();
 
 bot.on('ready', function() {
-    bot.user.setGame("$pBTC");
+    bot.user.setGame("$help");
     console.log("Connected");
 });
 
-bot.login("MzkzMjUwNTIwODk2MTEwNTkz.DSBV6Q.GzkLp-7GQDd8_stMma-X8NAfjSo");
+bot.login("Mzk4NjMwNTA3NDA0ODUzMjQ5.DTBVHw.KXxTTIDhGklA037cPcl5r7W-bwg");
 
 bot.on('message', message => {
     if (message.content === prefix + "help") {
-        message.channel.sendMessage("Liste des commandes: \n -$help \n -$BTC-USD");
+        message.channel.sendMessage("__**Liste des commandes:**__ \n -$help \n -$pBTC");
     }
 
     
