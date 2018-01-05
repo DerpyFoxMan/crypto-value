@@ -49,7 +49,7 @@ bot.on('message', message => {
     }
     
     // test
-    if (message.content === prefix + "pXBY") {
+    else if (message.content === prefix + "pXBY") {
         coinmarketcap.multi(coins => {
             var maintenant=new Date();
             var jour=maintenant.getDate();
