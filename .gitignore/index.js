@@ -79,4 +79,10 @@ bot.on('message', message => {
         });
     }
     
+    if (message.content === "$loop") { 
+      var interval = setInterval (function () {
+        message.channel.send("123")
+      }, 300000); 
+    }
+    
 });
